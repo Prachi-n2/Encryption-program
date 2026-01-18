@@ -9,7 +9,7 @@ Small Python script that performs a randomized substitution cipher for learning 
 ## Requirements
 - Python 3.8+ (standard library only)
 
-Usage
+## Usage
 Enter a plaintext message when prompted to encrypt.
 The script prints the encrypted message, then prompts for a ciphertext to decrypt (in the same run).
 The script uses an in-memory randomized key, so encryption and decryption must occur within the same execution unless the key is saved.
@@ -23,7 +23,7 @@ Key persistence: the script currently generates a new random key each run. To de
 Unicode: non-ASCII characters (e.g., emojis) are not in the charset and will fail. Extend the charset or normalize inputs if required.
 Not cryptographically secure: this is a learning demo. Do not use for real secret data. For secure encryption use a vetted library such as cryptography.
 
-Troubleshooting
+## Troubleshooting
 ValueError / crashes: check for unsupported characters in input.
 Wrong decryption: ensure the same key is used for both encrypt/decrypt (same program run or saved key).
 No output: ensure Python 3.8+ is used and the script is executed with the expected interpreter.
